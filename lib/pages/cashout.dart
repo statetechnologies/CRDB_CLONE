@@ -9,14 +9,14 @@ import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/cupertino.dart';
 
-class ToaPesaScreen extends StatefulWidget {
-  const ToaPesaScreen({super.key});
+class CashoutScreen extends StatefulWidget {
+  const CashoutScreen({super.key});
 
   @override
-  State<ToaPesaScreen> createState() => _ToaPesaScreenState();
+  State<CashoutScreen> createState() => _CashoutScreenState();
 }
 
-class _ToaPesaScreenState extends State<ToaPesaScreen>
+class _CashoutScreenState extends State<CashoutScreen>
     with SingleTickerProviderStateMixin {
   final _pageController = PageController();
   late TabController _tabController;

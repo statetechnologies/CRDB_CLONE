@@ -8,14 +8,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/cupertino.dart';
 
-class MainsScreen extends StatefulWidget {
-  const MainsScreen({super.key});
+class MainScreen extends StatefulWidget {
+  const MainScreen({super.key});
 
   @override
-  State<MainsScreen> createState() => _MainsScreenState();
+  State<MainScreen> createState() => _MainScreenState();
 }
 
-class _MainsScreenState extends State<MainsScreen> {
+class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
 
   void _onItemTapped(int index) {
@@ -26,10 +26,10 @@ class _MainsScreenState extends State<MainsScreen> {
 
   static const List<Widget> pages = [
     OverviewScreen(),
-    TumaPesaScreen(),
-    ToaPesaScreen(),
-    MalipoScreen(),
-    MipangilioScreen()
+    TransfersScreen(),
+    CashoutScreen(),
+    PaymentsScreen(),
+    SettingsPage()
   ];
 
   @override

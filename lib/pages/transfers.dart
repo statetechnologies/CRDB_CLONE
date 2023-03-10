@@ -8,14 +8,14 @@ import 'package:crdb_simbanking/data/data.dart';
 import 'package:crdb_simbanking/pages/overview.dart';
 import 'package:flutter/cupertino.dart';
 
-class TumaPesaScreen extends StatefulWidget {
-  const TumaPesaScreen({super.key});
+class TransfersScreen extends StatefulWidget {
+  const TransfersScreen({super.key});
 
   @override
-  State<TumaPesaScreen> createState() => _TumaPesaScreenState();
+  State<TransfersScreen> createState() => _TransfersScreenState();
 }
 
-class _TumaPesaScreenState extends State<TumaPesaScreen> {
+class _TransfersScreenState extends State<TransfersScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(

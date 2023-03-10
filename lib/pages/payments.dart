@@ -6,14 +6,14 @@ import 'package:crdb_simbanking/data/data.dart';
 import 'package:crdb_simbanking/pages/overview.dart';
 import 'package:crdb_simbanking/pages/transfers.dart';
 
-class MalipoScreen extends StatefulWidget {
-  const MalipoScreen({super.key});
+class PaymentsScreen extends StatefulWidget {
+  const PaymentsScreen({super.key});
 
   @override
-  State<MalipoScreen> createState() => _MalipoScreenState();
+  State<PaymentsScreen> createState() => _PaymentsScreenState();
 }
 
-class _MalipoScreenState extends State<MalipoScreen> {
+class _PaymentsScreenState extends State<PaymentsScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(

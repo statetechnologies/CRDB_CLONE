@@ -4,14 +4,14 @@ import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/cupertino.dart';
 
-class MipangilioScreen extends StatefulWidget {
-  const MipangilioScreen({super.key});
+class SettingsPage extends StatefulWidget {
+  const SettingsPage({super.key});
 
   @override
-  State<MipangilioScreen> createState() => _MipangilioScreenState();
+  State<SettingsPage> createState() => _SettingsPageState();
 }
 
-class _MipangilioScreenState extends State<MipangilioScreen> {
+class _SettingsPageState extends State<SettingsPage> {
 
   bool switchEnglish=false;
   bool switchMode=false;
