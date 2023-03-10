@@ -32,9 +32,9 @@ class _MalipoScreenState extends State<MalipoScreen> {
                 child: ListView(
                   children: [
                     ServiceCard(
-                      itemslength: malipo.length,
-                      itemslistIcon: malipo.map((e) => e['icon']).toList(),
-                      itemslistName: malipo.map((e) => e['name']).toList(),
+                      itemslength: payments.length,
+                      itemslistIcon: payments.map((e) => e['icon']).toList(),
+                      itemslistName: payments.map((e) => e['name']).toList(),
                     ),
                   ],
                 ),

@@ -156,7 +156,7 @@ List<Map> mikopo = [
   }
 ];
 
-List<Map> malipo = [
+List<Map> payments = [
   {
     "name": "LUKU",
     "icon": Icon(
