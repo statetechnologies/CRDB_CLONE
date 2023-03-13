@@ -6,6 +6,7 @@ import 'package:crdb_simbanking/widgets/promo_box.dart';
 import 'package:crdb_simbanking/widgets/service_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:intl/intl.dart';
 
 class AccountsTab extends StatelessWidget {
   String actual = '50000';
@@ -35,7 +36,7 @@ class AccountsTab extends StatelessWidget {
                  Text("Actual"),
                 SizedBox(height: 5.h),
                 Text(
-                  showAmount==true? actual:actual.replaceRange(0, actual.length, '*********'),
+                  showAmount==true?numberFormat(int.parse(actual)):actual.replaceRange(0, actual.length, '*********'),
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
@@ -80,6 +81,12 @@ class AccountsTab extends StatelessWidget {
       );
     });
 
+  }
+
+  numberFormat(number) {
+    var f = NumberFormat("###,###", "en_US");
+    var newNum = f.format(number);
+    return newNum;
   }
 }
 

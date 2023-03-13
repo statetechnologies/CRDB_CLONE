@@ -3,6 +3,7 @@ import 'package:crdb_simbanking/widgets/page_view_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:crdb_simbanking/widgets/tabs_section.dart';
+import 'package:intl/intl.dart';
 
 class OverviewScreen extends StatefulWidget {
   const OverviewScreen({super.key});
@@ -72,9 +73,9 @@ class _OverviewScreenState extends State<OverviewScreen>
   }
 
   //TODO: Implement intl dependency to get this working
-  // numberFormat(number){
-  //   var f = NumberFormat("###,###", "en_US");
-  //   var newNum = f.format(number);
-  //   return newNum;
-  // }
+  numberFormat(number){
+    var f = NumberFormat("###,###", "en_US");
+    var newNum = f.format(number);
+    return newNum;
+  }
 }
